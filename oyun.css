@@ -1,0 +1,108 @@
+
+
+html{
+  scrollbar-width: thin;
+    scrollbar-color: #a12a8b #3242bb;
+    background-attachment: fixed;
+     font-family: 'Quicksand', sans-serif;
+}
+#home {
+      background-image:linear-gradient(to right, #32a5ed, #e4f47c);
+        background-size: cover;
+      color: #2c3e50;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+#home.park { background: url('resimler/park.jpeg') no-repeat center center fixed; background-size: cover; }
+#home.ruya { background: url('resimler/ruya.jpeg') no-repeat center center fixed; background-size: cover; }
+#home.piknik { background: url('resimler/piknik.jpeg') no-repeat center center fixed; background-size: cover; }
+#home.okul { background: url('resimler/okul.jpeg') no-repeat center center fixed; background-size: cover; }
+#home.sunset { background: url('resimler/ev.jpeg') no-repeat center center fixed; background-size: cover; }
+    
+    .story-box {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(18, 133, 190, 0.488);
+  background-size: cover;
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+  text-align: center;
+  font-size: clamp(10px, 2vw, 20px);
+}
+
+   .character-imgs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  z-index: 1;
+}
+
+.character-imgs img {
+  height: 600px;
+  border-radius: 10px;
+}
+
+    .choices {
+      margin-top: 20px;
+      cursor: pointer;
+    }
+
+    .choices button {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 12px 16px;
+      background: #45bbe6b0;
+      color: white;
+      font-size: 1rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .choices button:hover {
+      background: #e4f47cd4;
+    }
+
+   
+ @media screen and (max-width: 768px) {
+      .character-imgs {
+        flex-direction: row;
+        gap: 20px;
+      }
+
+      .character-imgs img {
+        height: 300px;
+      }
+
+      .story-box {
+        font-size: 10px;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .character-imgs img {
+        height: 200px;
+      }
+
+      .story-box {
+        font-size: 8px;
+      }
+    }
+    
+  
+    

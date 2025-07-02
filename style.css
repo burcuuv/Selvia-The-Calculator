@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #f6ff75 #67c5fb;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(to right, #32a5ed, #e4f47c);
+  color: #fefefe;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin: 60px 0;
+}
+
+header h1 {
+  font-family: 'Tropi Land', sans-serif;                                          
+  color: #c8f982;
+  font-size: 170px;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-top: 120px;
+  
+}
+
+
+header h2 {
+  font-family: 'Ballet', sans-serif;
+  color: rgb(249, 230, 244);
+  position: relative;
+  left: 25%;
+  font-size: 30px;
+  margin-top: -50px;
+  
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  width: 100%;
+  padding: 20px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  z-index: 1000;
+  font-size: 30px;
+  position: relative;
+}
+
+.navbar .logo {
+  width: clamp(60px, 10vw, 130px);
+  height: auto;
+}
+
+.navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li a {
+  font-family: 'Futura', sans-serif;
+  font-weight: 600;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  transition: 0.2s ease;
+}
+
+p {
+  color: #fff;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Futura', sans-serif;
+}
+
+footer {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  margin-top: 40px;
+}
+
+.basla {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Futura', sans-serif;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 992px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 100;
+    padding: 20px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 100px;
+    margin-top: 80px;
+  }
+
+  header h2 {
+    font-size: 20px;
+    left: 20%;
+    margin-top: -30px;
+  }
+
+  .navbar ul li a {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+
+  footer {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar ul {
+    flex-direction: row;
+    align-items: center;
+  }
+  .navbar ul li {
+    margin: 10px 0;
+   
+  }
+  
+}
+@media screen and (max-width: 480px) {
+  header h1 {
+    font-size: 80px;
+    margin-top: 60px;
+  }
+
+  header h2 {
+    font-size: 18px;
+    left: 15%;
+    margin-top: -20px;
+  }
+
+  .navbar ul li a {
+    font-size: 0.7rem;
+    padding: 5px 8px;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 5px;
+  }
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+  }
+  
+}
+@media screen and (max-width: 1200px) {
+  header h1 {
+    font-size: 120px;
+    margin-top: 100px;
+  }
+
+  header h2 {
+    font-size: 24px;
+    left: 22%;
+    margin-top: -40px;
+  }
+
+  .navbar ul li a {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  footer {
+    font-size: 18px;
+    padding: 15px;
+  }
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+  }
+  .navbar ul {
+    flex-direction: row;
+    align-items: center;
+  }
+  .navbar ul li {
+    margin: 0 10px;
+  }
+  
+}
+@media  screen and (max-width:300px) {
+  header h1 {
+    font-size: 60px;
+    margin-top: 40px;
+  }
+
+  header h2 {
+    font-size: 16px;
+    left: 10%;
+    margin-top: -10px;
+  }
+
+  .navbar ul li a {
+    font-size: 0.6rem;
+    padding: 3px 5px;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 3px;
+  }
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+  }
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="tr">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Selvia The Calculator</title>
+    <link rel="icon" type="x-icon" href="resimler/selvialogo.png">
+    <link rel="stylesheet" href="hesaplama.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="hesaplama.js" defer></script>
+      <link href="https://fonts.cdnfonts.com/css/myna" rel="stylesheet">
+    
+</head>
+
+<body class="carbonbg">
+   
+     <nav class="navbar">
+            
+        <img src="resimler/selvialogo.png" alt="Logo" class="logo">
+            <ul>
+                 <li style="  background-color: rgb(115, 190, 255);"><a href="index.html">ANASAYFA</a></li>
+                   <li style="  background-color: rgb(18, 133, 190);"><a href="hesaplama.html">HESAPLA: ÇOCUKLAR</a></li>
+                    <li style="  background-color: rgb(240, 61, 190);"><a href="yetishesap.html">HESAPLA: BÜYÜKLER</a></li>
+                 <li style="  background-color: rgba(207, 197, 56, 0.917);"><a href="oyun.html">OYUN</a></li>
+            </ul>
+        </nav> 
+        <nav class="karbonbaslik"><h2>Bir büyüğümüzü yanımıza alarak, bir ay içinde kullandığımız araçları formumuza dolduralım ve karbon salınımımızı öğrenelim! Yan kısımda da sana faydalı olacak bir sürü bilgi yazdım.İyi çalışmalar doğa kahramanı!<br>-Selvia (∩ᗒᴥᗕ)⊃━☆ﾟ.*</br></h2> 
+     </nav>
+    <main>
+<table class="carbon-table">
+       <div class="tasit">
+             <form id="carbon-footprint-form">
+                <div class="form-group">
+                <label for="distance">Bu ay sürekli nereye gittiysek kilometre olarak yazalım :</label>
+                <input type="number" id="distance" name="distance" required>
+
+                <label for="vehicletype">Peki genelde hangi aracı kullandık ?</label>
+                <select id="vehicletype" name="vehicletype" required>
+                    <option value="">Seçiniz</option>
+                    <option value="car"> Dizel Araba</option>
+                    <option value="bus">Otobüs</option>
+                    <option value="schbus">Servis</option>
+                    <option value="train">Tren</option>
+                    <option value="plane">Uçak</option>
+                    <option value="none">Hiçbiri</option>
+                </select>
+
+                <label for="geritype">Peki bu ay bu geri dönüşüm yaptın mı ?</label>  
+                <select id="geritype" name="geritype" required>
+                    <option value="">Seçiniz</option>
+                    <option value="kagit">Kağıt</option>
+                    <option value="cam">Cam</option>
+                    <option value="plastik">Plastik</option>  
+                    <option value="none1">Hiçbiri</option>
+                </select>
+                <label for="adet">Peki kaç kilo ?</label>
+                <input type="number" id="adet" name="adet" required>
+
+                <label for="electric">Peki bu ay tabletle telefonla kaç saat oynadık ?</label>
+                <input type="number" id="electric" name="electric" required>
+               
+                <label for="tshirt">Son olarak bu ay ihtiyacın dışı hangi giyim ürününü aldın ?</label>
+                <select id="tshirt" name="tshirt" required>
+                    <option value="">Seçiniz</option>
+                    <option value="tshirt">Tişört</option>
+                    <option value="elbise">Elbise</option>
+                    <option value="ayakkabi">Ayakkabı</option>
+                    <option value="pantolon">Pantolon</option>
+                    <option value="none2">Hiçbiri</option>
+                 </select>
+                </div><div class="butuslar"><button onclick="hesap()" type="submit" id="hesap">Hesapla</button>
+                <a href="https://www.tema.org.tr/bagislar"><button>Tema  bağışı</a></button></div>
+                <div id="sonuc">
+            <div id="cfc" class="cfc">💨🏡</div>
+            <div id="worldneed" class="worldneed">Bakalım rutinin kaç dünya ihtiyacı ortaya çıkarıcak...😖</div>
+            <div id="treework" class="worldneed">🌴🪷</div>
+                </div></div> 
+                
+
+                    
+        </div>
+    </div>  
+                
+            </form> 
+       
+</table>
+     <div class="bilgi">
+       <span class="bilgi1"><h2>İşte Sana Birkaç Eğlenceli Bilgi 🐝</h2></span>
+       <ul>
+        <li> İlk olarak sana karbon ayak izinin ne olduğunu hatırlatayım Bir bireyin, topluluğun veya organizasyonun faaliyetleri sonucu atmosfere salınan sera gazlarının toplamını ifade eder.Bu gazlar, iklim değişikliğine neden olan ve küresel ısınmayı hızlandıran gazlardır. </li>
+        <li>Benim adımın doğa yolu olduğunu biliyor muydun ? <b>Selva</b> ispanyolca <b>orman</b> demek <b>via</b> da yol demek. Ben de senin gibi doğa dostu olduğumdan ismimi böyle yapmışlar. Nasıl ama ? 😊 </li>
+        <li>Ben Lego yapmayı ve inşa etmeli oyuncakları çok severim. Ve duyduğuma göre Lego 2050'ye kadar sıfır sera gazı emisyonu elde etme sözü vermişler.</li>
+        <li>Bir Barbie'nin yapımında 648 gram karbon salınımı oluyormuş. 🫣</li>
+        <li>Bu arada biliyor musun ? Dünyada her yıl 1.3 milyar ton gıda israf ediliyor. Bu da toplam üretilen gıdanın üçte birine denk geliyor. Yani her yıl üretilen gıdanın üçte biri çöpe gidiyor. Bu da çok üzücü bir durum. </li>
+        <li>Bir de biliyor musun ? Dünyada her yıl 2.5 trilyon plastik şişe kullanılıyor. Bu da her saniye 1 milyon plastik şişe demek. Plastik şişeler doğada 450 yıl kadar kalabiliyor. Yani bir plastik şişe atıldığında, doğada 450 yıl boyunca kalıyor ve bu da çevre kirliliğine neden oluyor.</li>
+       </ul>
+</body>
+<footer>
+    <p>&copy; YBS Bitirme Projesi</p>
+   <a href="https://www.linkedin.com/in/burcu-aleyna-başaran-97093a2a9/"> 
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+</svg></a>
+</footer>
+</html>

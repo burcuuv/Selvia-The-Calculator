@@ -1,0 +1,247 @@
+  h1 {
+  font-family: 'Tropi Land', sans-serif;                                          
+  color: #c8f982;
+  font-size: 90px;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-top: 120px;
+  
+}
+
+
+ .hspbaslik h2 {
+  font-family: 'Myna Condensed', sans-serif;
+color: rgb(249, 230, 244);
+  font-size: 20px;
+ 
+  
+}
+h2 {
+  font-family: 'Myna Condensed', sans-serif;
+  color: rgb(249, 230, 244);
+  font-size: 40px;}
+ .karbonh {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 8px;
+    margin-top: 80px;
+  }
+  
+  .form {
+  border-radius: 12px;
+  padding: 20px;
+  font-size: 150%;
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow: hidden;
+}
+input, select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px 14px;
+  font-size: 1rem;
+  border-radius: 13px;
+  border: none;
+  background: #fdfdfd;
+  color: #0c803a;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+    select{
+        cursor: pointer;
+    }
+    input:focus, select:focus{
+        background: #e1b8fb;
+        box-shadow: 0 2 8px rgba(243, 219, 249, 0.3);
+        outline: none;
+    }
+   .butuslar {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 20px;
+  justify-items: center; 
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto; 
+}
+
+button {
+  border: none;
+  background-color: #f47cde;
+  color: #fefefe;
+  box-shadow: 0 4px 6px rgba(215, 46, 46, 0.1);
+  transition: background-image 0.3s, box-shadow 0.3s, transform 0.3s;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 12px 20px;
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+button:hover {
+  background-image: linear-gradient(45deg, #f47cde, #32a4bb);
+  box-shadow: 0 6px 8px rgba(243, 219, 249, 0.2);
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(243, 219, 249, 0.1);
+}
+
+#hesap {
+  background-color: #f47cde;
+  border-radius: 25px;
+  padding: 22px 18px;
+  box-shadow: 0 2px 8px rgba(243, 219, 249, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3vh;
+  width: 100%;
+  max-width: 900px;
+}
+
+.cfc {
+  font-size: 1.2rem;
+  color: #285936;
+  font-weight: 600;
+}
+
+    .worldneed{
+font-size: 20px;
+background-color: #90e8a6;
+padding: 16px 18px;
+        border-radius: 30px;
+        color: #397b4c;
+        box-shadow: 0 2px 8px rgba(243, 219, 249, 0.1);
+        margin-top: 1.5vh;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        display: inline-block;
+    }
+  .mobile-only {
+    display: block;
+  }
+  .desktop-only {
+    display: none;
+  }
+  
+    .ev {
+      background-color: #a7f5bb;
+      grid-column: 1;
+      grid-row: 1;
+    }
+    
+    .fatura {
+      background-color: #f47cde;
+      grid-column: 1;
+      grid-row: 2;
+      height: fit-content;
+    }
+    
+    .araba {
+      background-color: cornflowerblue;
+      grid-column: 1;
+      grid-row: 3;
+    }
+    
+    .yemek {
+      background-color: #32a4bb;
+      grid-column: 1;
+      grid-row: 4;
+      
+    }
+    
+    .recycle {
+      background-color: #90e8a6;
+      grid-column: 1;
+      grid-row: 5;
+    }
+    
+    .submit {
+      background-color: #d4f891;
+      grid-column: 1;
+      grid-row: 6;
+    }
+    @media (min-width: 768px) {
+    .hspbaslik h1 {
+      font-size: 120px;
+      margin-top: 100px;
+    }
+    .hspbaslik h2 {
+      font-size: 24px;
+      margin-top: -20px;
+    }
+    .karbonh {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      gap: 8px;
+    }
+    .mobile-only {
+      display: none;
+    }
+    .desktop-only {
+      display: block;
+    }
+    
+    .ev {
+      grid-column: 1;
+      grid-row: 1 / span 3;
+      color: #32a4bb;
+    }
+    
+    .fatura {
+      grid-column: 3;
+      grid-row: 1 / span 3;
+    }
+    
+    .araba {
+      grid-column: 2;
+      grid-row: 1 / span 2;
+    }
+    
+    .yemek {
+      grid-column: 2;
+      grid-row: 3;
+    }
+    
+    .recycle {
+      grid-column: 1 / span 2;
+      grid-row: 4;
+    }
+    
+    .submit {
+      grid-column: 3;
+      grid-row: 4;
+    }
+    
+  }
+  @media screen and (max-width: 320px) {
+    .hspbaslik h1 {
+      font-size: 60px;
+      margin-top: 80px;
+    }
+    .hspbaslik h2 {
+      font-size: 16px;
+      margin-top: -10px;
+    }
+    .karbonh {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      gap: 4px;
+    }
+    .ev, .fatura, .araba, .yemek, .recycle, .submit {
+      grid-column: 1;
+      grid-row: auto;
+    }
+    .mobile-only {
+      display: block;
+    }
+    
+  }
