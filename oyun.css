@@ -78,8 +78,7 @@ html{
       background: #e4f47cd4;
     }
 
-   
- @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
       .character-imgs {
         flex-direction: row;
         gap: 20px;
@@ -92,6 +91,10 @@ html{
       .story-box {
         font-size: 10px;
       }
+      .choices button {
+        font-size: 1rem;
+        padding: 10px 14px;
+      }
     }
 
     @media screen and (max-width: 480px) {
@@ -102,8 +105,13 @@ html{
       .story-box {
         font-size: 8px;
       }
+      .choices button {
+        font-size: 0.9rem;
+        padding: 10px 14px;
+      }
     }
-@media screen and (max-width: 300px) {
+    
+  @media screen and (max-width: 300px) {
     .character-imgs img {
       height: 150px;
     }
@@ -111,8 +119,11 @@ html{
     .story-box {
       font-size: 6px;
     } 
+    .choices button {
+      font-size: 0.8rem;
+      padding: 8px 12px;
+    }
     
   }
-    
   
     
