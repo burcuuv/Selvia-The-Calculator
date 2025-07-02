@@ -103,6 +103,16 @@ html{
         font-size: 8px;
       }
     }
+@media screen and (max-width: 300px) {
+    .character-imgs img {
+      height: 150px;
+    }
+
+    .story-box {
+      font-size: 6px;
+    } 
+    
+  }
     
   
     
